@@ -1,0 +1,399 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+h2{
+    margin-left: 15px;
+}
+h2:first-child{
+    margin-top: 25px;
+    margin-left: 15px;
+}
+div{
+    font-size: 20px;
+    font-weight: bold;
+}
+div.blue{
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    color: blue;
+}
+div.red{
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    color: red;
+}
+div.green{
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    color: green;
+}
+div.orange{
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    color:orange;
+}
+span{
+    width: 250px;
+    height: 2px;
+    margin-top: 15px;
+    background-color: #eee;
+}
+.circle-titles{
+    padding: 15px;
+    margin-bottom: 25px;
+}
+.circle-titles .blue span{
+    position: relative;
+}
+.circle-titles .blue span::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 70%;
+    background-color: blue;
+    height: 100%;
+}
+.circle-titles .blue span::after{
+    content: "";
+    position: absolute;
+    left: -2px;
+    top: 0;
+    transform: translateY(-50%);
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: blue;
+}
+.circle-titles .red span{
+    position: relative;
+}
+.circle-titles .red span::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 70%;
+    background-color: red;
+    height: 100%;
+}
+.circle-titles .red span::after{
+    content: "";
+    position: absolute;
+    left: -2px;
+    top: 0;
+    transform: translateY(-50%);
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: red;
+}
+.circle-titles .green span{
+    position: relative;
+}
+.circle-titles .green span::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 70%;
+    background-color: green;
+    height: 100%;
+}
+.circle-titles .green span::after{
+    content: "";
+    position: absolute;
+    left: -2px;
+    top: 0;
+    transform: translateY(-50%);
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: green;
+}
+.circle-titles .orange span{
+    position: relative;
+}
+.circle-titles .orange span::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 70%;
+    background-color: orange;
+    height: 100%;
+}
+.circle-titles .orange span::after{
+    content: "";
+    position: absolute;
+    left: -2px;
+    top: 0;
+    transform: translateY(-50%);
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: orange;
+}
+.box-titles{
+    padding: 15px;
+    margin-bottom: 25px;
+}
+
+.box-titles .blue span{
+    position: relative;
+}
+.box-titles .blue span::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 70%;
+    background-color: blue;
+    height: 100%;
+}
+.box-titles .blue span::after{
+    content: "";
+    position: absolute;
+    left: -2px;
+    top: 0;
+    transform: translateY(-50%);
+    width: 10px;
+    height: 10px;
+    background-color: blue;
+}
+.box-titles .red span{
+    position: relative;
+}
+.box-titles .red span::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 70%;
+    background-color: red;
+    height: 100%;
+}
+.box-titles .red span::after{
+    content: "";
+    position: absolute;
+    left: -2px;
+    top: 0;
+    transform: translateY(-50%);
+    width: 10px;
+    height: 10px;
+    background-color: red;
+}
+.box-titles .green span{
+    position: relative;
+}
+.box-titles .green span::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 70%;
+    background-color: green;
+    height: 100%;
+}
+.box-titles .green span::after{
+    content: "";
+    position: absolute;
+    left: -2px;
+    top: 0;
+    transform: translateY(-50%);
+    width: 10px;
+    height: 10px;
+    background-color: green;
+}
+.box-titles .orange span{
+    position: relative;
+}
+.box-titles .orange span::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 70%;
+    background-color: orange;
+    height: 100%;
+}
+.box-titles .orange span::after{
+    content: "";
+    position: absolute;
+    left: -2px;
+    top: 0;
+    transform: translateY(-50%);
+    width: 10px;
+    height: 10px;
+    background-color: orange;
+}
+.tup-titles{
+    padding: 15px;
+    margin-bottom: 25px;
+}
+.tup-titles .blue span{
+    position: relative;
+}
+.tup-titles .blue span::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 70%;
+    background-color: blue;
+    height: 100%;
+}
+.tup-titles .blue span::after{
+    content: "";
+    position: absolute;
+    left: -2px;
+    bottom: 0;
+    border-color: transparent transparent blue  transparent;
+    border-width: 10px;
+    border-style: solid;
+}
+.tup-titles .red span{
+    position: relative;
+}
+.tup-titles .red span::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 70%;
+    background-color: red;
+    height: 100%;
+}
+.tup-titles .red span::after{
+    content: "";
+    position: absolute;
+    left: -2px;
+    bottom: 0;
+    border-color: transparent transparent red  transparent;
+    border-width: 10px;
+    border-style: solid;
+}
+.tup-titles .green span{
+    position: relative;
+}
+.tup-titles .green span::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 70%;
+    background-color: green;
+    height: 100%;
+}
+.tup-titles .green span::after{
+    content: "";
+    position: absolute;
+    left: -2px;
+    bottom: 0;
+    border-color: transparent transparent green  transparent;
+    border-width: 10px;
+    border-style: solid;
+}
+.tup-titles .orange span{
+    position: relative;
+}
+.tup-titles .orange span::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 70%;
+    background-color: orange;
+    height: 100%;
+}
+.tup-titles .orange span::after{
+    content: "";
+    position: absolute;
+    left: -2px;
+    bottom: 0;
+    border-color: transparent transparent orange  transparent;
+    border-width: 10px;
+    border-style: solid;
+}
+.tdown-titles{
+    padding: 15px;
+    margin-bottom: 25px;
+}
+
+.tdown-titles .blue span{
+    position: relative;
+}
+.tdown-titles .blue span::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 70%;
+    background-color: blue;
+    height: 100%;
+}
+.tdown-titles .blue span::after{
+    content: "";
+    position: absolute;
+    left: -2px;
+    border-color: blue transparent transparent transparent;
+    border-width: 10px;
+    border-style: solid;
+}
+.tdown-titles .red span{
+    position: relative;
+}
+.tdown-titles .red span::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 70%;
+    background-color: red;
+    height: 100%;
+}
+.tdown-titles .red span::after{
+    content: "";
+    position: absolute;
+    left: -2px;
+    border-color: red transparent transparent transparent;
+    border-width: 10px;
+    border-style: solid;
+}
+.tdown-titles .green span{
+    position: relative;
+}
+.tdown-titles .green span::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 70%;
+    background-color: green;
+    height: 100%;
+}
+.tdown-titles .green span::after{
+    content: "";
+    position: absolute;
+    left: -2px;
+    border-color: green transparent transparent transparent;
+    border-width: 10px;
+    border-style: solid;
+}
+.tdown-titles .orange span{
+    position: relative;
+}
+.tdown-titles .orange span::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 70%;
+    background-color: orange;
+    height: 100%;
+}
+.tdown-titles .orange span::after{
+    content: "";
+    position: absolute;
+    left: -2px;
+    border-color: orange transparent transparent transparent;
+    border-width: 10px;
+    border-style: solid;
+}

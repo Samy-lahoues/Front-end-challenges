@@ -1,0 +1,72 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container{
+    width: 800px;
+    height: 500px;
+    display: flex;
+    justify-content: space-between;
+}
+.container .E{
+    width: 45%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(7, 1fr);
+    grid-template-areas: "first first first"
+                        "second . . "
+                        "third . . "
+                        "fourth fourth fourth "
+                        "fifth . . "
+                        "sixth . . "
+                        "seventh seventh seventh";
+
+}
+.container .first{
+    grid-area: first;
+    background-color: black;
+}
+.container .second{
+    grid-area: second;
+    background-color: black;
+}
+.container .third{
+    grid-area: third;
+    background-color: black;
+}
+.container .fourth{
+    grid-area: fourth;
+    background-color: black;
+}
+.container .fifth{
+    grid-area: fifth;
+    background-color: black;
+}
+.container .sixth{
+    grid-area: sixth;
+    background-color: black;
+}
+.container .seventh{
+    grid-area: seventh;
+    background-color: black;
+}
+.container .L{
+    width: 45%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(7, 1fr);
+    grid-template-areas: "first . ."
+                        "second . ."
+                        "third . ."
+                        "fourth . ."
+                        "fifth . ."
+                        "sixth . ."
+                        "seventh seventh seventh";
+}

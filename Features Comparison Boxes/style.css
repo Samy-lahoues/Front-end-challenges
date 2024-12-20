@@ -1,0 +1,181 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --mainColor:#2196F3;
+    --secondaryColor: #F44336;
+    --BgColor:#eee;
+}
+body{
+    font-family: sans-serif;
+    background-color: var(--BgColor);
+}
+section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container{
+    position: relative;
+    width: 1000px;
+    background-color: var(--BgColor);
+}
+.container .discount{
+    position: absolute;
+    background-color: var(--mainColor);
+    color: white;
+    font-size: 20px;
+    padding: 10px 30px 10px 20px;
+    top: 20px;
+    right: 0;
+}
+.container .discount::after{
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 0;
+    border-color: transparent var(--BgColor) transparent transparent ;
+    border-width: 22px;
+    border-style: solid;
+    z-index: 3;
+}
+.cards{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    font-size: 18px;
+    margin-top: 5em;
+    margin-bottom: 5em;
+}
+.cards .card1{
+    width: 47%;
+    color: black;
+    border-radius:10px ;
+}
+.cards .card1 div{
+    padding: 15px 25px;
+    background-color: #fff;
+}
+.cards .card1 div:not(:first-child){
+    border-bottom: #eee solid 2px;
+}
+.cards .card1 .title{
+    padding: 15px 33px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    color: white;
+    background-color: var(--secondaryColor);
+}
+
+.cards .card2{
+    width: 47%;
+    color: black;
+    border-radius: 10px;
+}
+.cards .card2 div {
+    padding: 15px 25px;
+    background-color: #fff;
+}
+
+.cards .card2 div:not(:first-child) {
+    border-bottom: #eee solid 2px;
+}
+
+.cards .card2 .title {
+    padding: 15px 33px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    color: white;
+    background-color: var(--mainColor);
+}
+
+.card1 div span.check {
+    display: inline-block;
+    position: relative;
+    background-color: #009688;
+    width: 25px; /* Ensure dimensions are set */
+    height: 25px; /* Ensure dimensions are set */
+    border-radius: 50%;
+    margin-left: 10px;
+    margin-right: 10px;
+    bottom: -4px;
+}
+.card1 div span.uncheck {
+    display: inline-block;
+    position: relative;
+    text-align: center;
+    color: white;
+    padding-top: 1px;
+    background-color: #E91E63;
+    width: 25px; /* Ensure dimensions are set */
+    height: 25px; /* Ensure dimensions are set */
+    border-radius: 50%;
+    margin-left: 10px;
+    margin-right: 10px;
+    bottom: -4px;
+}
+.card1 div span.check::before{
+    content: "";
+    position: absolute;
+    background-color: #fff;
+    width: 22%;
+    height: 2px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-110%, -25%) rotate(50deg);
+    z-index: 3;
+}
+.card1 div span.check::after {
+    content: "";
+    position: absolute;
+    background-color: #fff;
+    width: 45%;
+    height: 2px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-32%, -50%) rotate(128deg);
+    z-index: 2;
+}
+.card1 div span.uncheck::before{
+    content: "x";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -53%);
+}
+.card2 div span.check {
+    display: inline-block;
+    position: relative;
+    background-color: #009688;
+    width: 25px; /* Ensure dimensions are set */
+    height: 25px; /* Ensure dimensions are set */
+    border-radius: 50%;
+    margin-left: 10px;
+    margin-right: 10px;
+    bottom: -4px;
+}
+.card2 div span.check::before{
+    content: "";
+    position: absolute;
+    background-color: #fff;
+    width: 22%;
+    height: 2px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-110%, -25%) rotate(50deg);
+    z-index: 3;
+}
+.card2 div span.check::after {
+    content: "";
+    position: absolute;
+    background-color: #fff;
+    width: 45%;
+    height: 2px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-32%, -50%) rotate(128deg);
+    z-index: 2;
+}
