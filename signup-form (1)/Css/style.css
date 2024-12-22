@@ -1,0 +1,187 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --bgColor:#2294f2;
+    --labelColor:#999999;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--bgColor);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+a{
+    text-decoration: none;
+}
+
+.container {
+    background-color: #ffffff;
+    padding: 20px 30px;
+    border-radius: 8px;
+    width: 400px;
+    height: 550px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+}
+
+.signup-form h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2em;
+    color: #333333;
+}
+
+.signup-form > div {
+    position: relative;
+    width: 100%;
+    margin-bottom: 20px;
+}
+.signup-form div > input {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-bottom: 1px solid #dddddd;
+    border-radius: 5px;
+    font-size: 14px;
+    outline : none;
+}
+.signup-form div > i{
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    font-size: 14px;
+    transform: translateY(-50%);
+    color:var(--labelColor) ;
+    transition: all 0.3s ease;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+}
+
+.signup-form div > label {
+    position: absolute;
+    top: 50%;
+    left: 30px;
+    transform: translateY(-50%);
+    color: var(--labelColor);
+    transition: all 0.3s ease;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+}
+.signup-form > div input:focus ~ label,
+.signup-form input:not(:placeholder-shown) ~ label{
+    top: -10px;
+    font-size: 12px;
+}
+
+.signup-form input:focus ~ i,
+.signup-form input:not(:placeholder-shown) ~ i{
+    top: -10px;
+    font-size: 12px;
+}
+.submit-btn {
+    width: 100%;
+    padding: 12px;
+    font-weight: bold;
+    background-color: #2294f2;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    transition: 0.3s;
+    cursor: pointer;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+}
+
+.submit-btn:hover {
+    background-color: #0973d7;
+}
+.login{
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 2px dashed var(--labelColor);
+}
+.signup-form .login p a{
+    color: var(--bgColor);
+}
+.signup-form .register{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.register .icons{
+    width: 120px;
+    height: 50px;
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+.register .icons a:first-child{
+    display: grid;
+    place-items: center;
+    width: 30px;
+    height: 30px;
+    color: white;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    background-color: #3c5999;
+}
+.register .icons a:nth-child(2){
+    display: grid;
+    place-items: center;
+    width: 30px;
+    height: 30px;
+    color: white;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    background-color: black;
+}
+.register .icons a:last-child{
+    display: grid;
+    place-items: center;
+    width: 30px;
+    height: 30px;
+    color: white;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    background-color: #db4537;
+    font-size: 16px;
+}

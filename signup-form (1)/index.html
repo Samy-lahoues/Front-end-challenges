@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup Form</title>
+    <link rel="stylesheet" href="Css/style.css">
+    <link rel="stylesheet" href="Css/all.min.css">
+    <link rel="stylesheet" href="Css/normalize.css">
+</head>
+<body>
+    <div class="container">
+        <form class="signup-form">
+            <h1>Sign Up</h1>
+            <div >
+                <input type="text" id="name" placeholder="" required>
+                <i class="fas fa-user"></i>
+                <label for="name">Name</label>
+            </div>
+            <div >
+                <input type="email" id="email" placeholder="" required>
+                <i class="fas fa-envelope"></i>
+                <label for="email">Email</label>
+            </div>
+            <div >
+                <input type="password" id="password" placeholder="" required>
+                <i class="fas fa-lock"></i>
+                <label for="password">Password</label>
+            </div>
+            <div >
+                <input type="password" id="confirm-password" placeholder="" required>
+                <i class="fas fa-lock"></i>
+                <label for="confirm-password">Confirm Password</label>
+            </div>
+            <button type="submit" class="submit-btn">LOGIN</button>
+            <div class="login">
+                <p>have an account? <a href="#">Login Here</a></p>
+            </div>
+            <div class="register">
+                <h3>Or rigester with</h3>
+                <div class="icons">
+                    <a href="www.facebook.com"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="www.x.com"><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="www.google.com"><i class="fa-brands fa-google-plus-g"></i></a>
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
