@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --bgColor:rgb(82, 81, 156);
+    --textColor:rgb(74, 85, 105);
+    --iconsColor:#e6ae40;
+    --hilightColor:rgb(255, 235, 191);
+}
+body{
+    min-height: 100vh;
+    font-family: "Cairo", sans-serif;
+    background-color: rgb(82, 81, 156);
+    display: flex;
+    flex-direction: column;
+    padding: 25px 30px;
+}
+body > h1{
+    color: white;
+    font-weight: 700;
+    margin-bottom: 15px;
+    margin-left: 270px;
+}
+body > p{
+    color: white;
+    margin-bottom: 40px;
+    margin-left: 35px;
+    margin-bottom: 20px;
+    margin-left: 270px;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+ul{
+    list-style-type:none;
+}
+p{
+    color: var(--textColor);
+}
+.container{
+    width: 800px;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    background-color: var(--bgColor);
+}
+.card{
+    padding: 30px;
+    background-color: white;
+}
+.card:first-child{
+    height: 100%;
+    width: 470px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+    z-index: 2;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+}
+.card:nth-child(2){
+    height: 62%;
+    width: 330px;
+    z-index: 1;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+.title{
+    display: flex;
+}
+.title svg {
+    margin-top: 17px;
+    margin-right: 7px;
+}
+.container .card .title > h2{
+    position: relative;
+    color: var(--textColor);
+    text-transform: capitalize;
+}
+.container .card:first-child .title > h2{
+    font-size: 2em;
+}
+.title > h2::before{
+    content: "";
+    position: absolute;
+    bottom: 13px;
+    background-color: var(--hilightColor);
+    width: 100%;
+    height: 8px;
+    z-index: -1;
+}
+.container .card ul li{
+    padding: 5px 0;
+    border-bottom:2px ;
+    border-bottom-color: var(--textColor);
+    border-bottom-style: solid;
+}
+.selling{
+    height: 90px;
+    display: flex;
+    justify-content: space-between;
+}
+.selling .price{
+    position: relative;
+    display: flex;
+    color: var(--textColor);
+}
+.selling .price h1{
+    padding-left: 10px;
+    font-size: 3em;
+    font-weight: bold;
+}
+.selling .price i{
+    font-size: 1.1em;
+    position:absolute;
+    top: 22px;
+}
+.selling .price sub{
+    position: absolute;
+    bottom: 15px;
+    right: -25px;
+    font-weight: bold;
+}
+.selling button{
+    margin-top: 35px;
+    border: none;
+    height: 42px;
+    width: 100px;
+    padding: 10px 15px;
+    text-align: center;
+    background-color: var(--iconsColor);
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+.container .card > p{
+    font-size: 15px;
+}
+.container .card:nth-child(2) > .title h2{
+    font-size: 1.7em;
+    padding-left: 9px;
+}
+.container .card:nth-child(2) > .title i{
+    font-size: 1.55em;
+    margin-top: 13px;
+    color: var(--iconsColor);
+}
